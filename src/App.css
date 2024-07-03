@@ -49,3 +49,19 @@
   flex-direction: column;
   text-align: start;
 }
+
+.navbar {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-evenly;
+}
+
+.navbar h1 {
+  text-align: start;
+  margin-left: 2rem;
+}
+
+.navbar-buttons {
+  text-align: center;
+  border: 1px solid firebrick;
+}
