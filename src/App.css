@@ -61,7 +61,17 @@
   margin-left: 2rem;
 }
 
-.navbar-buttons {
-  text-align: center;
-  border: 1px solid firebrick;
+.navbar-button-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-button {
+  color: black;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.navbar-button:hover {
+  color: green;
 }
