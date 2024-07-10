@@ -61,17 +61,11 @@
   margin-left: 2rem;
 }
 
-.navbar-button-section {
+.navbar-buttons {
   display: flex;
   align-items: center;
 }
 
-.navbar-button {
-  color: black;
+.navbar-buttons div {
   margin-right: 1rem;
-  text-decoration: none;
-}
-
-.navbar-button:hover {
-  color: yellow;
 }
