@@ -20,6 +20,7 @@ const CheckPage = () => {
             <form onSubmit={handleSubmit}>
                 <label>Enter Player's Name: </label>
                 <input
+                    type="text"
                     placeholder='Last, First'
                     value={name}
                     onChange={handleChange}
