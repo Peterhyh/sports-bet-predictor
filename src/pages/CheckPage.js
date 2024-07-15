@@ -1,9 +1,32 @@
-import UserEntrySection from "../components/UserEntrySection";
+import { useState } from 'react';
+
+
+
 
 const CheckPage = () => {
+    const [name, setName] = useState('');
+    const [result, setResult] = useState('');
+
+    const handleChange = (e) => {
+        setName(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setResult("Here are the results:")
+    };
     return (
         <div>
-            <UserEntrySection label="Enter name:" placeholder="name" />
+            <form onSubmit={handleSubmit}>
+                <label>Enter Player's Name: </label>
+                <input
+                    placeholder='Last, First'
+                    value={name}
+                    onChange={handleChange}
+                />
+                <button type="submit">Search</button>
+            </form>
+            {result && <p>{result}</p>}
         </div>
     );
 }
